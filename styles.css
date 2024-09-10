@@ -131,14 +131,13 @@ h2 {
 }
 
 
-/* Sezione Validato con sfondo blu, ma parte della stessa card */
+/* Sezione Validato con sfondo blu */
 .ticket-validato {
     background-color: #1a3e9e;
     color: #fede00; /* Cambia il colore del testo a giallo */
     padding: 10px 15px;
     display: flex;
-    flex-direction: column; /* Cambia la direzione in colonna */
-    align-items: flex-start; /* Allinea il contenuto a sinistra */
+    align-items: center; /* Allinea tutto sulla stessa riga */
     border-radius: 0 0 10px 10px;
 }
 
@@ -147,28 +146,39 @@ h2 {
     color: #fede00; /* Cambia il colore del testo a giallo */
     font-weight: 700;
     margin: 0;
+    margin-right: 15px; /* Spazio a destra tra il titolo e le date */
 }
 
-/* Sezione delle informazioni della data */
 .ticket-validato .date-info {
+    display: flex;
+    align-items: center; /* Allinea verticalmente gli elementi */
     font-size: 14px;
     color: #fff;
-    margin: 0;
-    display: flex;
-    align-items: center; /* Allinea verticalmente */
-    width: 100%;
+    margin-left: 15px; /* Spazio a sinistra tra il titolo e le date */
 }
 
 .date-info span {
-    font-weight: 700;
-    margin-right: 15px; /* Spazio a destra per ogni elemento */
+    margin-right: 20px; /* Spazio a destra per ogni elemento */
+}
+
+.fino-al {
+    font-weight: 100;
+}
+
+.data, .ora {
+    font-weight: 300;
 }
 
 /* Riduci la dimensione del font per "Fino al" */
 .fino-al {
-    font-size: 12px; /* Riduci la dimensione del font */
-    margin-right: 15px; /* Spazio a destra per "Fino al" */
+    font-size: 7px; /* Mantieni la dimensione del font uniforme */
 }
+
+.data, .ora {
+    font-size: 14px; /* Mantieni la dimensione del font uniforme */
+}
+
+
 
 #acquistaButton {
     background-color: #fede00;
