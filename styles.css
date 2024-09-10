@@ -191,7 +191,7 @@ h2 {
     background-color: #fff; /* Sfondo bianco */
     padding: 20px; /* Aumenta il padding per rendere lo sfondo più largo */
     border-radius: 10px 10px 0 0; /* Bordi arrotondati solo in alto */
-    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2); /* Ombra sulla parte superiore */
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1); /* Ombra sulla parte superiore */
     text-align: center; /* Centra il contenuto orizzontalmente */
     z-index: 1000; /* Assicura che il contenitore sia sopra altri elementi */
     width: calc(100% - 40px); /* Riduce la larghezza per tenere conto del padding laterale */
