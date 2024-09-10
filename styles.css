@@ -18,7 +18,7 @@ header {
 }
 
 h1 {
-    font-size: 30px;
+    font-size: 35px;
     color: #1a3e9e;
     font-weight: 700;
     margin: 0;
@@ -149,7 +149,7 @@ h2 {
     color: #fede00; /* Cambia il colore del testo a giallo */
     font-weight: 600;
     margin: 0;
-    margin-right: 47px; /* Spazio a destra tra il titolo e le date */
+    margin-right: 46px; /* Spazio a destra tra il titolo e le date */
 }
 
 .ticket-validato .date-info {
@@ -182,16 +182,20 @@ h2 {
 }
 
 /* Contenitore per lo sfondo bianco */
+/* Contenitore per lo sfondo bianco */
 .acquista-button-wrapper {
     position: fixed;
-    bottom: 60px;
+    bottom: 40px; /* Distanza dal fondo della pagina, lascia spazio per il footer */
     left: 0; /* Allinea a sinistra */
     right: 0; /* Allinea a destra */
     background-color: #fff; /* Sfondo bianco */
-    padding: 10px; /* Spaziatura interna per il contenitore */
-    border-radius: 10px; /* Bordi arrotondati per il contenitore */
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Ombra leggera */
+    padding: 20px; /* Aumenta il padding per rendere lo sfondo più largo */
+    border-radius: 10px 10px 0 0; /* Bordi arrotondati solo in alto */
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2); /* Ombra sulla parte superiore */
     text-align: center; /* Centra il contenuto orizzontalmente */
+    z-index: 1000; /* Assicura che il contenitore sia sopra altri elementi */
+    width: calc(100% - 40px); /* Riduce la larghezza per tenere conto del padding laterale */
+    margin: 0 auto; /* Centra il contenitore orizzontalmente */
 }
 
 /* Pulsante "Acquista Biglietto" */
@@ -202,14 +206,14 @@ h2 {
     border: none;
     cursor: pointer;
     font-size: 18px;
-    font-weight: 550;
-    border-radius: 10px; /* Bordi arrotondati */
+    font-weight: 700;
+    border-radius: 10px; /* Bordi arrotondati del pulsante */
     box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2); /* Ombra sulla parte superiore */
     width: 100%; /* Larghezza del pulsante al 100% del contenitore */
-    max-width: 500px; /* Imposta una larghezza massima se necessario */
-    margin: 0 auto; /* Centra il pulsante all'interno del contenitore */
+    max-width: 460px; /* Imposta una larghezza massima se necessario */
     display: inline-block; /* Adatta la larghezza del pulsante */
 }
+
 
 
 footer {
