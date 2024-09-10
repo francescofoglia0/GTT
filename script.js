@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const optionsTime = { hour: '2-digit', minute: '2-digit' };
 
         // Calcola l'orario mezz'ora avanti
-        const futureTime = new Date(now.getTime() + 30 * 60000); // Aggiunge 30 minuti (30 * 60 * 1000 ms)
+        const futureTime = new Date(now.getTime() + 52 * 60000); // Aggiunge 30 minuti (30 * 60 * 1000 ms)
 
         const formattedDate = now.toLocaleDateString('it-IT', optionsDate);
         const formattedTime = futureTime.toLocaleTimeString('it-IT', optionsTime);
