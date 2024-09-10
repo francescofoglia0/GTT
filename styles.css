@@ -122,7 +122,8 @@ h2 {
 .bippami-text {
     text-align: center;
     margin: 0;
-    font-size: 11px;
+    font-size: 10px;
+    font-weight: 100;
 }
 
 .bippami-text br {
@@ -134,19 +135,20 @@ h2 {
 /* Sezione Validato con sfondo blu */
 .ticket-validato {
     background-color: #1a3e9e;
+    margin-top: 10px;
     color: #fede00; /* Cambia il colore del testo a giallo */
-    padding: 10px 15px;
+    padding: 12px 15px;
     display: flex;
     align-items: center; /* Allinea tutto sulla stessa riga */
     border-radius: 0 0 10px 10px;
 }
 
 .ticket-validato h4 {
-    font-size: 16px;
+    font-size: 20px;
     color: #fede00; /* Cambia il colore del testo a giallo */
     font-weight: 600;
     margin: 0;
-    margin-right: 40px; /* Spazio a destra tra il titolo e le date */
+    margin-right: 50px; /* Spazio a destra tra il titolo e le date */
 }
 
 .ticket-validato .date-info {
@@ -158,7 +160,7 @@ h2 {
 }
 
 .date-info span {
-    margin-right: 20px; /* Spazio a destra per ogni elemento */
+    margin-right: 30px; /* Spazio a destra per ogni elemento */
 }
 
 .fino-al {
@@ -171,11 +173,11 @@ h2 {
 
 /* Riduci la dimensione del font per "Fino al" */
 .fino-al {
-    font-size: 7px; /* Mantieni la dimensione del font uniforme */
+    font-size: 10px; /* Mantieni la dimensione del font uniforme */
 }
 
 .data, .ora {
-    font-size: 14px; /* Mantieni la dimensione del font uniforme */
+    font-size: 16px; /* Mantieni la dimensione del font uniforme */
 }
 
 
