@@ -1,5 +1,5 @@
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     background-color: #f3f4f6;
     margin: 0;
     padding: 0;
@@ -111,7 +111,7 @@ h2 {
 .button-image img {
     width: 50px; /* Imposta la larghezza dell'immagine del pulsante */
     height: auto; /* Mantiene le proporzioni dell'immagine */
-    margin: 0 10px; /* Aggiungi margine per spazio laterale */
+    margin: 0 20px; /* Aggiungi margine per spazio laterale */
 }
 
 .tornello-text {
@@ -144,9 +144,9 @@ h2 {
 .ticket-validato h4 {
     font-size: 16px;
     color: #fede00; /* Cambia il colore del testo a giallo */
-    font-weight: 700;
+    font-weight: 600;
     margin: 0;
-    margin-right: 15px; /* Spazio a destra tra il titolo e le date */
+    margin-right: 40px; /* Spazio a destra tra il titolo e le date */
 }
 
 .ticket-validato .date-info {
@@ -166,7 +166,7 @@ h2 {
 }
 
 .data, .ora {
-    font-weight: 300;
+    font-weight: 400;
 }
 
 /* Riduci la dimensione del font per "Fino al" */
