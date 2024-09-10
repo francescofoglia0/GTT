@@ -154,7 +154,7 @@ h2 {
 
 .ticket-validato .date-info {
     display: flex;
-    align-items: center; /* Allinea verticalmente gli elementi */
+    align-items: right; /* Allinea verticalmente gli elementi */
     font-size: 14px;
     color: #fff;
     margin-left: 15px; /* Spazio a sinistra tra il titolo e le date */
