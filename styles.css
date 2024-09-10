@@ -149,23 +149,24 @@ h2 {
     color: #fede00; /* Cambia il colore del testo a giallo */
     font-weight: 600;
     margin: 0;
-    margin-right: 46px; /* Spazio a destra tra il titolo e le date */
+    margin-right: 50px; /* Spazio a destra tra il titolo e le date */
 }
 
 .ticket-validato .date-info {
     display: flex;
-    align-items: right; /* Allinea verticalmente gli elementi */
+    align-items: center; /* Allinea verticalmente gli elementi */
     font-size: 14px;
     color: #fff;
     margin-left: 15px; /* Spazio a sinistra tra il titolo e le date */
 }
 
 .date-info span {
-    margin-right: 30px; /* Spazio a destra per ogni elemento */
+    margin-right: 40px; /* Spazio a destra per ogni elemento */
 }
 
 .fino-al {
     font-weight: 100;
+    margin-top: 5px;
 }
 
 .data, .ora {
