@@ -208,7 +208,6 @@ h2 {
     font-size: 18px;
     font-weight: 700;
     border-radius: 10px; /* Bordi arrotondati del pulsante */
-    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2); /* Ombra sulla parte superiore */
     width: 100%; /* Larghezza del pulsante al 100% del contenitore */
     max-width: 460px; /* Imposta una larghezza massima se necessario */
     display: inline-block; /* Adatta la larghezza del pulsante */
