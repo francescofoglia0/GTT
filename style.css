@@ -1,0 +1,197 @@
+/* Stili generali */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f3f4f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 100%;
+    max-width: 375px;
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid #e0e0e0;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    background-color: white;
+}
+
+.header h1 {
+    color: #1c3f94;
+    font-size: 24px;
+}
+
+.refresh-icon {
+    font-size: 24px;
+    color: #1c3f94;
+}
+
+.ticket-section {
+    padding: 15px;
+}
+
+.ticket-section h2 {
+    color: #666666;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.ticket {
+    background-color: #ffffff;
+    border: 2px solid #f0c92b;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+.ticket-content {
+    display: flex;
+    align-items: center;
+}
+
+.ticket-info h3 {
+    color: #1c3f94;
+    font-size: 20px;
+}
+
+.ticket-info img {
+    width: 80px;
+    margin-left: 10px;
+}
+
+.ticket-validate p {
+    font-size: 14px;
+    color: #999999;
+}
+
+.ticket-status {
+    background-color: #1c3f94;
+    color: white;
+    padding: 10px;
+    border-radius: 0 8px 8px 0;
+}
+
+.status-validated {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.ticket-time p {
+    font-size: 12px;
+}
+
+.buy-ticket {
+    background-color: #f0c92b;
+    text-align: center;
+    padding: 15px;
+}
+
+.buy-ticket button {
+    background-color: #f0c92b;
+    color: #000000;
+    border: none;
+    font-size: 18px;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    background-color: #1c3f94;
+    padding: 10px 0;
+}
+
+.footer-item {
+    text-align: center;
+    color: white;
+}
+
+.icon {
+    font-size: 24px;
+}
+
+.footer-item p {
+    margin-top: 5px;
+    font-size: 12px;
+}
+
+/* Media Queries */
+
+/* Stili per schermi più grandi, come desktop */
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 768px; /* Aumenta la larghezza per schermi grandi */
+        padding: 20px;
+    }
+
+    .header h1 {
+        font-size: 32px; /* Titoli più grandi per desktop */
+    }
+
+    .ticket {
+        padding: 20px;
+        flex-direction: row; /* Mantieni il layout a due colonne */
+    }
+
+    .ticket-info h3 {
+        font-size: 24px;
+    }
+
+    .buy-ticket button {
+        font-size: 22px; /* Testo più grande per pulsanti su desktop */
+    }
+
+    .footer-item p {
+        font-size: 14px;
+    }
+}
+
+/* Stili per schermi piccoli, come telefoni */
+@media screen and (max-width: 767px) {
+    .container {
+        max-width: 100%;
+        padding: 0;
+    }
+
+    .header h1 {
+        font-size: 24px; /* Titolo più piccolo su dispositivi mobili */
+    }
+
+    .ticket {
+        flex-direction: column; /* Cambia layout per schermi piccoli */
+    }
+
+    .ticket-info h3 {
+        font-size: 20px;
+    }
+
+    .ticket-status {
+        border-radius: 8px; /* Arrotondamento uniforme su mobile */
+    }
+
+    .buy-ticket button {
+        font-size: 18px;
+    }
+
+    .footer-item p {
+        font-size: 12px;
+    }
+}
