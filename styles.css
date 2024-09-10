@@ -1,21 +1,21 @@
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #f3f4f6;
+    background-color: #f3f4f6; /* Colore di sfondo uniforme */
     margin: 0;
     padding: 0;
 }
 
 header {
-    background-color: #fff;
-    padding: 10px;
+    background-color: #f3f4f6; /* Stesso sfondo di "Biglietti Disponibili" */
+    padding: 10px 20px; /* Padding uniforme */
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid #ccc;
+    border-bottom: none; /* Rimuove eventuali bordi */
 }
 
 h1 {
-    font-size: 24px;
+    font-size: 30px;
     color: #1a3e9e;
     font-weight: 700; /* Roboto Bold */
 }
@@ -29,10 +29,12 @@ h1 {
 
 #bigliettiDisponibili {
     padding: 20px;
+    background-color: #f3f4f6; /* Stesso sfondo per questa sezione */
+    margin-top: 0; /* Rimuove lo spazio tra header e questa sezione */
 }
 
 h2 {
-    font-size: 18px;
+    font-size: 20px;
     color: #000;
     font-weight: 500; /* Roboto Medium */
 }
@@ -49,13 +51,14 @@ h2 {
 }
 
 .ticket-info h3 {
-    font-size: 18px;
+    font-size: 25px;
     color: #1a3e9e;
     font-weight: 700; /* Roboto Bold */
 }
 
 .ticket-info img {
-    width: 80px;
+    width: 150px; /* Aumenta la dimensione dell'immagine */
+    height: auto;  /* Mantiene le proporzioni originali */
 }
 
 .ticket-actions button {
