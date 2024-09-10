@@ -25,7 +25,7 @@ h1 {
 }
 
 #refreshImage {
-    width: 25px; /* Imposta la larghezza dell'immagine */
+    width: 24px; /* Imposta la larghezza dell'immagine */
     height: auto; /* Mantiene le proporzioni dell'immagine */
     cursor: pointer;
     position: absolute; /* Posiziona l'immagine rispetto al contenitore */
@@ -63,12 +63,28 @@ h2 {
     padding: 15px;
 }
 
+.info-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .ticket-info h3 {
     font-size: 25px;
     color: #1a3e9e;
     font-weight: 500;
-    margin: 10px 0;
-    text-align: left; /* Allinea il titolo a sinistra */
+    margin: 0;
+}
+
+.info-button-image {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.info-button-image img {
+    width: 24px; /* Imposta la larghezza dell'immagine del pulsante */
+    height: auto; /* Mantiene le proporzioni dell'immagine */
 }
 
 /* Sezione immagine, pulsante e testo affiancato */
@@ -90,22 +106,30 @@ h2 {
     border: none;
     cursor: pointer;
     padding: 0; /* Rimuove il padding */
-    margin-left: 10px;
 }
 
 .button-image img {
-    width: 40px; /* Imposta la larghezza dell'immagine del pulsante */
+    width: 50px; /* Imposta la larghezza dell'immagine del pulsante */
     height: auto; /* Mantiene le proporzioni dell'immagine */
     margin: 0 10px; /* Aggiungi margine per spazio laterale */
 }
 
-.ticket-content .tornello-text {
+.tornello-text {
     text-align: right;
     flex: 1;
-    font-size: 14px;
-    color: #000;
-    margin-left: 10px;
 }
+
+.bippami-text {
+    text-align: right;
+    margin: 0;
+    font-size: 14px;
+}
+
+.bippami-text br {
+    content: "";
+    margin: 0;
+}
+
 
 /* Sezione Validato con sfondo blu, ma parte della stessa card */
 .ticket-validato {
