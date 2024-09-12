@@ -237,3 +237,17 @@ footer {
     margin-bottom: -10px;
     cursor: pointer;
 }
+
+.footer-icon2 {
+    width: 45px; /* Imposta la larghezza delle icone */
+    height: auto; /* Mantiene le proporzioni delle icone */
+    margin-bottom: -10px;
+    cursor: pointer;
+}
+
+.footer-icon3 {
+    width: 50px; /* Imposta la larghezza delle icone */
+    height: auto; /* Mantiene le proporzioni delle icone */
+    margin-bottom: -10px;
+    cursor: pointer;
+}
