@@ -189,7 +189,7 @@ h2 {
 /* Contenitore per lo sfondo bianco */
 .acquista-button-wrapper {
     position: fixed;
-    bottom: 70px; /* Distanza dal fondo della pagina, lascia spazio per il footer */
+    bottom: 80px; /* Distanza dal fondo della pagina, lascia spazio per il footer */
     left: 0; /* Allinea a sinistra */
     right: 0; /* Allinea a destra */
     background-color: #fff; /* Sfondo bianco */
@@ -222,7 +222,7 @@ footer {
     background-color: #1a3e9e;
     color: #fff;
     padding: 10px;
-    padding-bottom: 55px; /* Aggiungi spazio vuoto sotto il footer */
+    padding-bottom: 65px; /* Aggiungi spazio vuoto sotto il footer */
     position: fixed;
     bottom: 0;
     left: 0;
@@ -240,14 +240,14 @@ footer {
 }
 
 .footer-icon {
-    width: 24px; /* Imposta la larghezza delle icone */
+    width: 20px; /* Imposta la larghezza delle icone */
     height: auto; /* Mantiene le proporzioni delle icone */
     cursor: pointer;
 }
 
 
 .footer-item span {
-    font-size: 12px; /* Dimensione del testo */
+    font-size: 9px; /* Dimensione del testo */
     color: #fff; /* Colore del testo */
     margin-top: 5px; /* Spazio tra l'icona e il testo */
 }
