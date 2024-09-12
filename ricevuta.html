@@ -4,9 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ricevuta di Vendita</title>
+    <meta name="apple-mobile-web-app-capable" content="yes"> <!-- Aggiunge la modalità a schermo intero su iOS -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"> <!-- Opzionale: Cambia lo stile della status bar -->
     <style>
         body {
             font-family: Arial, sans-serif;
+            white-space: nowrap;
             margin: 5 5;
             height: 100vh; /* Altezza del viewport */
             display: flex;
@@ -19,14 +22,18 @@
             width: 100vw; /* Larghezza del viewport */
             height: 100vh; /* Altezza del viewport */
             max-width: none; /* Disabilita il limite massimo di larghezza */
-            max-height: none; /* Disabilita il limite massimo di altezza */
+            max-height: calc(100vh - 40px); /* Disabilita il limite massimo di altezza */
             padding: 20px;
             background-color: #fff; /* Sfondo bianco del foglio */
             box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2); /* Ombra solo sulla parte superiore */
             overflow: auto; /* Abilita lo scrolling se necessario */
             position: relative;
+            display: grid;
+            grid-template-columns: 1fr; /* Una sola colonna */
+            grid-template-rows: auto auto; /* Righe auto adattive */
+            gap: 10px; /* Spazio tra gli elementi */
         }
-
+        
         .ricevuta img {
             display: block;
             width: 150px;
