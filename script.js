@@ -1,3 +1,7 @@
+document.getElementById('buttonImage').addEventListener('click', function() {
+    window.open('ricevuta.html', '_blank');
+});
+
 document.addEventListener('DOMContentLoaded', function() {
     // Funzione per aggiornare la data e l'ora
     function aggiornaDataEOra() {
@@ -25,5 +29,6 @@ document.addEventListener('DOMContentLoaded', function() {
         refreshButton.addEventListener('click', function() {
             aggiornaDataEOra();
         });
+
     }
 });

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ricevuta di Vendita</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        .ricevuta {
+            border: 1px solid #ddd;
+            padding: 20px;
+            margin: 0 auto;
+            max-width: 600px;
+            background-color: #f9f9f9;
+        }
+
+        h1 {
+            color: #1a3e9e;
+        }
+
+        .info {
+            margin-bottom: 20px;
+        }
+
+        .info p {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="ricevuta">
+        <div class="info">
+            <p>RICEVUTA DI VENDITA</p>
+            <p>GTT SpA SpA</p>
+            <p>P.IVA 08559940013</p>
+        </div>
+
+        <p>Corso Filippo Turati 19/6</p>
+        <p>10128 Torino TO</p>
+        <p>Numero verde: 800-019152</p>
+        <p>Data acquisto: <span id="dataAcquisto"></span></p>
+        <p>--------------------------------</p>
+        <p>Seriale biglietto: 38015698536817630</p>
+        <p>Seriale contratto: AE110BE2-02364750</p>
+        <p>Codice tariffa: GTT 771</p>
+        <p>Descrizione tariffa: City su APP</p>
+        <p>Prezzo singolo: 1,90 euro</p>
+        <p>--------------------------------</p>
+        <p>Importo totale pagato: 1,90 euro</p>
+        <p>Modo pagamento: Carta Bancaria</p>
+        <p>Codice ordine pagamento: AGTTiOSA7605328650890</p>
+        <p>Arrivederci e Grazie</p>
+    </div>
+
+    <script>
+        // Funzione per aggiornare la data di acquisto con la data attuale
+        function aggiornaData() {
+            const now = new Date();
+            const options = { day: '2-digit', month: '2-digit', year: 'numeric' };
+            const dataAcquisto = now.toLocaleDateString('it-IT', options);
+
+            document.getElementById('dataAcquisto').textContent = dataAcquisto;
+        }
+
+        // Aggiorna la data al caricamento della pagina
+        window.onload = aggiornaData;
+    </script>
+</body>
+</html>
