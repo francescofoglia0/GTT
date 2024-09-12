@@ -7,53 +7,87 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            padding: 20px;
+            margin: 5 5;
+            height: 100vh; /* Altezza del viewport */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f0f0f0; /* Sfondo grigio chiaro */
         }
 
         .ricevuta {
-            border: 1px solid #ddd;
+            width: 100vw; /* Larghezza del viewport */
+            height: 100vh; /* Altezza del viewport */
+            max-width: none; /* Disabilita il limite massimo di larghezza */
+            max-height: none; /* Disabilita il limite massimo di altezza */
             padding: 20px;
-            margin: 0 auto;
-            max-width: 600px;
-            background-color: #f9f9f9;
+            background-color: #fff; /* Sfondo bianco del foglio */
+            box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2); /* Ombra solo sulla parte superiore */
+            overflow: auto; /* Abilita lo scrolling se necessario */
+            position: relative;
         }
 
-        h1 {
-            color: #1a3e9e;
+        .ricevuta img {
+            display: block;
+            width: 150px;
+            height: auto;
+            margin: 0 20px; /* Centra l'immagine orizzontalmente */
         }
 
         .info {
-            margin-bottom: 20px;
+            margin-top: 100px; /* Spazio tra l'immagine e il testo */
+            line-height: 22px;
+            width: 25%; /* Occupa circa 1/4 della larghezza del foglio */
+            position: absolute;
+            margin-left: 41px;
+            top: 0;
+            left: 0;
         }
 
         .info p {
-            margin: 5px 0;
+            margin: 0;
         }
+
+        .large-font {
+            font-size: 1em; /* Dimensione font ridotta */
+        }
+
+        .altro-font {
+            font-size: 1.1em; /* Dimensione font ridotta */
+        }
+        .ultimo-font{
+            font-size: 0.8em;
+        }
+
     </style>
 </head>
 <body>
     <div class="ricevuta">
+        <img src="logo-gtt.png" alt="Logo" style="max-height: 100px;"> <!-- Aggiungi qui l'URL dell'immagine -->
         <div class="info">
-            <p>RICEVUTA DI VENDITA</p>
-            <p>GTT SpA SpA</p>
-            <p>P.IVA 08559940013</p>
+            <p class="altro-font">RICEVUTA DI VENDITA</p>
+            <p class="altro-font">GTT SpA SpA</p>
+            <p class="altro-font">P.IVA 08559940013</p>
+            <p class="ultimo-font">Corso Filippo Turati 19/6</p>
+            <p class="ultimo-font">10128 Torino TO</p>
+            <p class="ultimo-font">Numero nero 011-0672000</p>
+            <p class="ultimo-font">Numero verde: 800-019152</p>
         </div>
-
-        <p>Corso Filippo Turati 19/6</p>
-        <p>10128 Torino TO</p>
-        <p>Numero verde: 800-019152</p>
-        <p>Data acquisto: <span id="dataAcquisto"></span></p>
-        <p>--------------------------------</p>
-        <p>Seriale biglietto: 38015698536817630</p>
-        <p>Seriale contratto: AE110BE2-02364750</p>
-        <p>Codice tariffa: GTT 771</p>
-        <p>Descrizione tariffa: City su APP</p>
-        <p>Prezzo singolo: 1,90 euro</p>
-        <p>--------------------------------</p>
-        <p>Importo totale pagato: 1,90 euro</p>
-        <p>Modo pagamento: Carta Bancaria</p>
-        <p>Codice ordine pagamento: AGTTiOSA7605328650890</p>
-        <p>Arrivederci e Grazie</p>
+        <div class="info" style="top: 25%; left: 0;">
+            <p class="large-font">Data acquisto: <span id="dataAcquisto"></span></p>
+            <p class="ultimo-font">--------------------------------</p>
+            <p class="ultimo-font">Seriale biglietto: 38015698536817630</p>
+            <p class="ultimo-font">Seriale contratto: AE110BE2-02364750</p>
+            <p class="ultimo-font">Codice tariffa: GTT 771</p>
+            <p class="ultimo-font">Descrizione tariffa: City su APP</p>
+            <p class="ultimo-font">Prezzo singolo: 1,90 euro</p>
+            <p class="ultimo-font">--------------------------------</p>
+            <p class="large-font">Importo totale pagato: 1,90 euro</p>
+            <p class="large-font">Modo pagamento: Carta Bancaria</p>
+            <p class="large-font">Codice ordine pagamento: AGTTiOSA7605328650890</p>
+            <p class="ultimo-font">--------------------------------</p>
+            <p class="large-font">Arrivederci e Grazie</p>
+        </div>
     </div>
 
     <script>
