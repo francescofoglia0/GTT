@@ -189,7 +189,7 @@ h2 {
 /* Contenitore per lo sfondo bianco */
 .acquista-button-wrapper {
     position: fixed;
-    bottom: 40px; /* Distanza dal fondo della pagina, lascia spazio per il footer */
+    bottom: 55px; /* Distanza dal fondo della pagina, lascia spazio per il footer */
     left: 0; /* Allinea a sinistra */
     right: 0; /* Allinea a destra */
     background-color: #fff; /* Sfondo bianco */
@@ -221,7 +221,7 @@ h2 {
 footer {
     background-color: #1a3e9e;
     color: #fff;
-    padding: 10px;
+    padding: 25px;
     position: fixed;
     bottom: 0;
     left: 0;
