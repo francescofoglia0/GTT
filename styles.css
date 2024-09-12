@@ -167,7 +167,10 @@ h2 {
 .fino-al {
     font-weight: 100;
     margin-top: 5px;
+    font-size: 10px;
+    white-space: nowrap; /* Impedisce la divisione del testo su più righe */
 }
+
 
 .data, .ora {
     font-weight: 400;
