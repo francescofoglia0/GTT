@@ -11,7 +11,7 @@
             font-family: Arial, sans-serif;
             white-space: nowrap;
             margin: 5 5;
-            height: 180vh; /* Altezza del viewport */
+            height: 120vh; /* Altezza del viewport */
             display: flex;
             justify-content: center;
             align-items: center;
@@ -26,7 +26,8 @@
             padding: 20px;
             background-color: #fff; /* Sfondo bianco del foglio */
             box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2); /* Ombra solo sulla parte superiore */
-            overflow: auto; /* Abilita lo scrolling se necessario */
+            overflow-y: auto; /* Abilita lo scrolling se necessario */
+            overflow-x: hidden;
             position: relative;
             display: grid;
             grid-template-columns: 1fr; /* Una sola colonna */
@@ -36,14 +37,14 @@
         
         .ricevuta img {
             display: block;
-            width: 150px;
+            width: 130px;
             height: auto;
             margin: 0 20px; /* Centra l'immagine orizzontalmente */
         }
 
         .info {
-            margin-top: 100px; /* Spazio tra l'immagine e il testo */
-            line-height: 22px;
+             /* Spazio tra l'immagine e il testo */
+            line-height: 1.4;
             width: 25%; /* Occupa circa 1/4 della larghezza del foglio */
             position: absolute;
             margin-left: 41px;
@@ -56,14 +57,14 @@
         }
 
         .large-font {
-            font-size: 1em; /* Dimensione font ridotta */
+            font-size: 0.6em; /* Dimensione font ridotta */
         }
 
         .altro-font {
-            font-size: 1.1em; /* Dimensione font ridotta */
+            font-size: 0.8em; /* Dimensione font ridotta */
         }
         .ultimo-font{
-            font-size: 0.8em;
+            font-size: 0.4em;
         }
 
     </style>
@@ -71,7 +72,7 @@
 <body>
     <div class="ricevuta">
         <img src="logo-gtt.png" alt="Logo" style="max-height: 100px;"> <!-- Aggiungi qui l'URL dell'immagine -->
-        <div class="info">
+        <div class="info" style="margin-top: 90px;">
             <p class="altro-font">RICEVUTA DI VENDITA</p>
             <p class="altro-font">GTT SpA SpA</p>
             <p class="altro-font">P.IVA 08559940013</p>
@@ -80,7 +81,7 @@
             <p class="ultimo-font">Numero nero 011-0672000</p>
             <p class="ultimo-font">Numero verde: 800-019152</p>
         </div>
-        <div class="info" style="top: 25%; left: 0;">
+        <div class="info" style="top: 27%; left: 0;">
             <p class="large-font">Data acquisto: <span id="dataAcquisto"></span></p>
             <p class="ultimo-font">--------------------------------</p>
             <p class="ultimo-font">Seriale biglietto: 38015698536817630</p>
