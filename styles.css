@@ -218,7 +218,6 @@ h2 {
 }
 
 
-
 footer {
     background-color: #1a3e9e;
     color: #fff;
@@ -229,13 +228,12 @@ footer {
     right: 0;
     display: flex;
     justify-content: space-around;
+    align-items: flex-end;
 }
 
-footer button {
-    background: none;
-    border: none;
-    color: #fff;
-    font-size: 16px;
+.footer-icon {
+    width: 30px; /* Imposta la larghezza delle icone */
+    height: auto; /* Mantiene le proporzioni delle icone */
+    margin-bottom: -10px;
     cursor: pointer;
-    font-weight: 500;
 }
