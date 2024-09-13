@@ -286,7 +286,7 @@ footer {
 }
 
 .loading-spinner img {
-    width: 50px;
+    width: 25px;
     height: auto;
     animation: rotate 1.3s linear infinite; /* Applica l'animazione di rotazione */
 }
