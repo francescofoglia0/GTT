@@ -32,3 +32,27 @@ document.addEventListener('DOMContentLoaded', function() {
 
     }
 });
+
+// Funzione per mostrare l'overlay di caricamento
+function mostraCaricamento() {
+    document.getElementById('loadingOverlay').style.display = 'flex';
+}
+
+// Funzione per nascondere l'overlay di caricamento
+function nascondiCaricamento() {
+    document.getElementById('loadingOverlay').style.display = 'none';
+}
+
+// Aggiungi un event listener ai pulsanti del footer e al pulsante "Acquista Biglietto"
+document.addEventListener('DOMContentLoaded', function() {
+    // Seleziona tutti i bottoni del footer
+    const footerButtons = document.querySelectorAll('footer .footer-item, #acquistaButton, #infoButtonImage');
+
+    footerButtons.forEach(function(button) {
+        button.addEventListener('click', function() {
+            mostraCaricamento();
+            // Simula un'attesa di 2 secondi prima di nascondere il caricamento
+            setTimeout(nascondiCaricamento, 2000); // Modifica il tempo se necessario
+        });
+    });
+});
